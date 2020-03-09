@@ -6,8 +6,8 @@
 
 import UIKit
 import CoreData
-//import Firebase
-//import FirebaseMessaging
+import Firebase
+import FirebaseMessaging
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var navigationController : UINavigationController?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //FirebaseApp.configure()
-        //self.registerForPushNotification()
+        FirebaseApp.configure()
+        self.registerForPushNotification()
         return true
     }
     
